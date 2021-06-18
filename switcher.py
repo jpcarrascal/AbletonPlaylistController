@@ -84,7 +84,7 @@ class MidiInputHandler(object):
 # Prompts user for MIDI input port, unless a valid port number or name
 # is given as the first argument on the command line.
 # API backend defaults to ALSA on Linux.
-midi_device = "Arduino Micro"ß
+midi_device = "Arduino Micro"
 port = sys.argv[1] if len(sys.argv) > 1 else midi_device
 
 try:
