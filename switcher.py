@@ -17,6 +17,7 @@ import rtmidi
 import random
 from rtmidi.midiutil import open_midiinput
 from rtmidi.midiconstants import (NOTE_ON, NOTE_OFF)
+from pyfiglet import figlet_format
 
 
 
@@ -80,6 +81,7 @@ class MidiInputHandler(object):
             else:
                 print("Loading ",song["name"])
                 subprocess.call(['open', song["file"]])
+                print(figlet_format(song["name"]))
 
 # Prompts user for MIDI input port, unless a valid port number or name
 # is given as the first argument on the command line.
